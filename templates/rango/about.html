@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html>
 
-	<head>
-		<title>About</title>
-	</head>
-	
+{% block title_block %}
+	About
+{% endblock %}
+
+{% block body_block %}
 	<body>
 		<h1>This tutorial has been put together by Euan</h1>
 		
 		<div>
-			<a href ="/rango/">Index</a><br />
 			<img src ="{% static "images/Noddy.png" %}"
 				alt= "Picture of Noddy" />
 		</div>
@@ -21,5 +19,4 @@
 		</div>
 		
 	</body>
-
-</html>
+{% endblock %}
