@@ -18,7 +18,7 @@
 		<ul>
 			{% for category in categories %}
 				<li>
-				<a href="/rango/category/{{ category.slug }}">{{ category.name }}</a>
+					<a href="/rango/category/{{ category.slug }}">{{ category.name }}</a>
 				</li>
 			{% endfor %}
 		</ul>
@@ -26,6 +26,7 @@
 			<strong>There are no categories present.</strong>
 		{% endif %}
 		</div>
+				
 			
 		<h2> Most Viewed Pages <h2>	
 			
@@ -43,6 +44,9 @@
 		{% endif %}
 		</div>
 			
+		<div>
+			<a href="/rango/add_category/">Add a New Category</a><br /> 
+		</div>
 		
 		<div>
 			<a href ="/rango/about/">About Rango</a><br />
